@@ -1,1 +1,78 @@
-/* Add you CSS here */
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Ensure a clean white background for readability */
+  color: #333333; /* Dark gray text for good contrast */
+}
+
+/* Navigation bar styles */
+nav {
+  background-color: #005f73; /* Dark teal for strong contrast */
+  color: #ffffff; /* White text for readability */
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #ffffff; /* Ensure links are white for contrast */
+  text-decoration: none;
+}
+
+/* Hero section styles */
+#home {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #94d2bd; /* Light teal for a calming effect */
+  color: #003d4c; /* Dark teal text for contrast */
+}
+#home h1 {
+  font-size: 2.5em;
+}
+#home p {
+  font-size: 1.2em;
+}
+
+/* Bio section styles */
+#about {
+  padding: 30px 20px;
+  background-color: #e9d8a6; /* Light beige for a warm tone */
+  color: #5c3d00; /* Dark brown text for contrast */
+}
+#about h2 {
+  text-align: center;
+}
+#about p {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Skills section styles */
+#skills {
+  padding: 30px 20px;
+  background-color: #ee9b00; /* Bright orange for emphasis */
+  color: #ffffff; /* White text for readability */
+}
+#skills h2 {
+  text-align: center;
+}
+#skills ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+#skills ul li {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1.1em;
+  color: #ffffff; /* Ensure skill items are white for contrast */
+}
