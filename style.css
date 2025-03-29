@@ -5,11 +5,15 @@ body {
   padding: 0;
   background-color: #ffffff; /* Ensure a clean white background for readability */
   color: #333333; /* Dark gray text for good contrast */
+  background-image: url('img/laptop.jpg'); /* Add background image */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Keep the background fixed during scrolling */
 }
 
 /* Navigation bar styles */
 nav {
-  background-color: #005f73; /* Dark teal for strong contrast */
+  background-color: rgb(241, 166, 59); /* Updated to pale olive */
   color: #ffffff; /* White text for readability */
 }
 nav ul {
@@ -27,11 +31,16 @@ nav ul li a {
   text-decoration: none;
 }
 
+/* General section styles */
+section {
+  margin: 100px 0; /* Add space above and below each section */
+}
+
 /* Hero section styles */
 #home {
   text-align: center;
   padding: 50px 20px;
-  background-color: #94d2bd; /* Light teal for a calming effect */
+  background-color: rgba(148, 210, 189, 0.8); /* Light teal with transparency */
   color: #003d4c; /* Dark teal text for contrast */
 }
 #home h1 {
@@ -44,8 +53,8 @@ nav ul li a {
 /* Bio section styles */
 #about {
   padding: 30px 20px;
-  background-color: #e9d8a6; /* Light beige for a warm tone */
-  color: #5c3d00; /* Dark brown text for contrast */
+  background-color: rgba(148, 157, 210, 0.8); /* Light purple with 80% opacity */
+  color: #ffffff; /* Adjust text color to white for better contrast */
 }
 #about h2 {
   text-align: center;
@@ -59,20 +68,36 @@ nav ul li a {
 /* Skills section styles */
 #skills {
   padding: 30px 20px;
-  background-color: #ee9b00; /* Bright orange for emphasis */
+  background-color: rgba(200, 210, 148, 0.8); /* Bright orange with transparency */
   color: #ffffff; /* White text for readability */
 }
 #skills h2 {
   text-align: center;
 }
+/* Align items in both skills lists */
 #skills ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  gap: 20px; /* Add space between items */
 }
 #skills ul li {
   display: inline-block;
   margin: 0 10px;
   font-size: 1.1em;
   color: #ffffff; /* Ensure skill items are white for contrast */
+}
+
+/* Increase size of icons in the first skills list */
+#skills ul:first-of-type i {
+  font-size: 5em; /* Make icons larger */
+}
+
+/* Footer styles */
+footer {
+  text-align: center; /* Center the text */
+  padding: 10px 0; /* Add padding for spacing */
+  background-color: rgb(241, 166, 59); /* Match footer color with nav bar */
+  color: #ffffff; /* White text for readability */
+  font-size: 0.9em; /* Slightly smaller text size */
 }
